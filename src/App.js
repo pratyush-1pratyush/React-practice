@@ -1,14 +1,16 @@
 
 import { useState } from 'react';
 import './App.css';
-import CounterData from './Components/counterData';
-import CounterUi from './Components/counterUI';
-import InputComponent from './Components/inputComponent';
-import InputComponent1 from './Components/inputComponent1';
-import Parent from './Components/Parent';
-import InfiniteScroll from './Components/InfiniteScroll';
+import CounterData from './Components/Lifting State Up/counterData';
+import CounterUi from './Components/Lifting State Up/counterUI';
+import InputComponent from './Components/Lifting State Up/inputComponent';
+import InputComponent1 from './Components/Lifting State Up/inputComponent1';
+import Parent from './Components/ChildToParent Data/Parent';
+import InfiniteScroll from './Components/Infinite Scroll/InfiniteScroll';
 
 function App() {
+  /* lIFTING STATE UP */
+
   /*const[value,setValue] = useState(0)
   const[inputText,setInputText] = useState("");
 
@@ -34,15 +36,22 @@ function App() {
 }
   */
 
- return (
-   
-    <>
-    {/*<div>
-      <Parent/>
-    </div>*/}
+     /* ChildToParent Data Pass */
 
-     <InfiniteScroll/>
-    </>
+ /*return (
+    <div>
+      <Parent/>
+    </div>
   );
+}*/
+
+    /* Infinite Scroll */
+    
+return (
+  <div>
+    <InfiniteScroll/>
+  </div>
+);
 }
+
 export default App;
