@@ -7,6 +7,9 @@ import InputComponent from './Components/Lifting State Up/inputComponent';
 import InputComponent1 from './Components/Lifting State Up/inputComponent1';
 import Parent from './Components/ChildToParent Data/Parent';
 import InfiniteScroll from './Components/Infinite Scroll/InfiniteScroll';
+import Sidebar from './Components/Sidebar/Sidebar';
+import Body from './Components/Sidebar/Body';
+import TabComponent from './Components/Tabs/TabComponent';
 
 function App() {
   /* lIFTING STATE UP */
@@ -47,9 +50,27 @@ function App() {
 
     /* Infinite Scroll */
     
-return (
+/*return (
   <div>
     <InfiniteScroll/>
+  </div>
+);
+}*/
+
+   /*Sidebar */    
+
+/*return (
+  <div className='flex-row'>
+   <Sidebar/>
+   <Body/>
+  </div>
+);
+}*/
+
+ /* Tabs */
+return (
+  <div className=''>
+      <TabComponent/>
   </div>
 );
 }
